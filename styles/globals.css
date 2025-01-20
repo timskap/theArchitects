@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    height:100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width:100%;
+    position: relative;
+    user-select: none; /* Prevent selection */
+    cursor: grab; /* iOS-like interaction */
+  }
+
+  .card {
+    width: 300px;
+    height: 400px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    user-select: none; /* Prevent selection */
+    cursor: grab; /* iOS-like interaction */
+  }
+  
+  .card-image  {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    user-select: none; /* Prevent selection */
+    cursor: grab; /* iOS-like interaction */
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+
+  img {
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+     user-select:none;
+     pointer-events:none
+}
+  
+  .card-info {
+    padding: 15px;
+    text-align: center;
+    user-select: none; /* Prevent selection */
+    cursor: grab; /* iOS-like interaction */
+  }
+  
+  .profession {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .bio {
+    font-size: 12px;
+    color: darkgray;
+  }
+  
+  .swipe {
+    position: absolute;
+  }

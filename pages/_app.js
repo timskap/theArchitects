@@ -20,8 +20,6 @@ function MyApp({ Component, pageProps }) {
         return <IndexPage {...pageProps} />;
       case 1:
         return <DeckPage />;
-      case 2:
-        return <ProfilePage />;
       default:
         return null;
     }
@@ -43,7 +41,6 @@ function MyApp({ Component, pageProps }) {
       >
         <BottomNavigationAction label="Swipe" icon={<RestoreIcon />} />
         <BottomNavigationAction label="Deck" icon={<FavoriteIcon />} />
-        <BottomNavigationAction label="Profile" icon={<PersonIcon />} />
       </BottomNavigation>
     </div>
   );
